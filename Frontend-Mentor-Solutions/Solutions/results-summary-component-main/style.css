@@ -1,0 +1,211 @@
+*
+{box-sizing: border-box; margin: 0;padding: 0;}
+:root
+{
+  --Light__Red:                       hsl(0, 100%, 67%);
+  --Orangey__Yellow:                  hsl(39, 100%, 56%);
+  --Green__Teal:                      hsl(166, 100%, 37%);
+  --Cobalt__Blue:                     hsl(234, 85%, 45%);
+  --Light__Slate__Blue__Background :  hsl(252, 100%, 67%);
+  --Light__Royal__Blue__Background :  hsl(241, 81%, 54%);
+  --Violet__Blue__Circle:             hsla(256, 72%, 46%, 1);
+  --Persian__Blue__Circle:            hsla(241, 72%, 46%, 0);
+  --White:                            hsl(0, 0%, 100%);
+  --Pale__Blue:                       hsl(221, 100%, 96%);
+  --Light__Lavender:                  hsl(241, 100%, 89%);
+  --Dark__Gray--Blue:                 hsl(224, 30%, 27%);                   
+}
+body
+{
+  min-height: 100vh;
+  display: grid;
+  background-color: var(--White);
+  place-content: center;
+  font-size: 18px;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+main
+{
+  background-color: var(--White);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 8px 15px 11px -3px var(--Pale__Blue);
+  width: 50vw;
+  max-width: 550px;
+  display: flex;
+}
+.containerMain__div1
+{
+  width: 50%;
+  color: var(--White);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  padding-bottom: 40px;
+  background: linear-gradient(var(--Light__Slate__Blue__Background),var(--Light__Royal__Blue__Background));
+}
+.containerMain__div2
+{
+  width: 50%;
+  padding: 30px;
+}
+.summary
+{
+  padding-bottom: 30px;
+  color: var(--Dark__Gray--Blue);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.containerMain__div2__text1
+{
+  border-radius: 10px;
+  font-size: .9rem;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 12px;
+  justify-content: space-between;
+}
+.div__text1
+{
+  background-color: hsl(0, 100%, 67% , .1);
+  color: var(--Light__Red);
+}
+.div__text2
+{
+  background-color: hsl(39, 100%, 56%, .1);
+  color: var(--Orangey__Yellow);
+}
+.div__text3
+{
+  background-color: hsl(166, 100%, 37% ,.1);
+  color: var(--Green__Teal);
+}
+.div__text4
+{
+  background-color: hsl(234, 85%, 45%,.1);
+  color: var(--Cobalt__Blue);
+}
+.containerMain__div2__reaction
+{
+  display: flex;
+}
+.containerMain__div2__reaction p
+{
+  margin-left: 8px;
+  font-weight: 700;
+}
+.containerMain__div2__text1 .numbers
+{
+  color: var(--Dark__Gray--Blue);
+  font-weight: 800;
+}
+.containerMain__div2__text1 .numbers .numbers__span
+{
+  opacity: .5;
+}
+
+
+
+.circle__numbers
+{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  background:linear-gradient( var(--Violet__Blue__Circle),var(--Persian__Blue__Circle));
+  line-height: 2.5;
+  font-size: 3.5rem;
+  font-weight: 700;
+  position: relative;
+}
+.circle__number
+{
+  position: relative;
+  top: -115px;
+  font-size: .8rem;
+  color: var(--White);
+  opacity: .4;
+}
+h1
+{
+  font-weight: 800;
+  opacity: .5;
+  font-size: 1.2rem;
+  margin: 25px 0px;
+}
+h2
+{
+  margin: 15px 0px;
+}
+.containerMain__div1__description,
+.containerMain__div1__description__block
+{
+  opacity: .6;
+  font-size: .9rem;
+  padding: 0px 30px;
+}
+.containerMain__div1__description__block
+{
+  display: none;
+}
+button
+{
+  border: none;
+  padding: 14px ;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: 700;
+  color: var(--White);
+  background-color: var(--Dark__Gray--Blue);
+}
+button:active
+{
+  background: linear-gradient(var(--Light__Slate__Blue__Background),var(--Light__Royal__Blue__Background));
+}
+@media (max-width:450px) 
+{
+  main 
+  {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .containerMain__div1
+  {
+    width: 100%;
+    height: 45%;
+    border-bottom-left-radius:  40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 0;
+  }
+  h2
+  {
+    margin: 10px;
+  }
+  .containerMain__div2
+  {
+    width: 100%;
+  }
+  .circle__numbers
+  {
+    width:  130px;
+    height: 130px;
+    font-size: 3rem;
+  }
+  .circle__number
+  {
+    top: -100px;
+  }
+  .containerMain__div1__description
+  {
+    display: none;
+  }
+  .containerMain__div1__description__block
+  {
+    display: block;
+  }
+}
