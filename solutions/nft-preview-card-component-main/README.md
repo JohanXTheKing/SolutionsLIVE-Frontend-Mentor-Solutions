@@ -20,7 +20,7 @@
 
 ---
 ## Links
-* Live Site URL: [CLICK HERE -->](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/QR-code-component)
+* Live Site URL: [CLICK HERE -->](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/nft-preview-card-component-main)
 ---
 
 ## Built With 
