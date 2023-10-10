@@ -6,10 +6,12 @@
 </p>
 
 <p align="center">
-  <a href="https://johanxxz.github.io/FrontendMentor/QR%20code%20component/index.html">Ver demo</a> -
-  <a href="https://github.com/JohanXxz/JohanXxz.github.io/issues">Report bug</a> -
-  <a href="https://github.com/JohanXxz/JohanXxz.github.io/issues">Request Feature</a>
+  <a href="https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions
+/solutions/stats-preview-card-component-main">Ver demo</a> -
+  <a href="https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/issues">Report bug</a> -
+  <a href="https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/issues">Request Feature</a>
 </p>
+
 
 ## Preview
 
@@ -17,8 +19,8 @@
 
 
 ## Links
-* Solution URL : [ CLICK -->](https://www.frontendmentor.io/solutions/stats-preview-card-component-solution-LkLB0sbJEw)
-* Live Site URL: [ CLICK -->](https://johanxxz.github.io/FrontendMentor/stats-preview-card-component-main/)
+* Live Site URL: [CLICK HERE -->](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/stats-preview-card-component-main)
+
 
 ---
 
@@ -58,14 +60,10 @@
 
 ## Let's Connect 👋
 
-* <a href="https://www.frontendmentor.io/profile/JohanXxz" target="_blank">
+* <a href="https://www.frontendmentor.io/profile/JohanXTheKing" target="_blank">
 	<img src="https://img.shields.io/badge/Frontend Mentor-fbfcf8?style=for-the-badge&logo=Frontend-Mentor&logoColor=black" alt="Frontend-Mentor">
   </a>
 
-* <a href="https://www.linkedin.com/in/ariizz-loopnuds-0336ba257/" target="_blank">
-	<img src="https://img.shields.io/badge/linkedin-%2300acee.svg?color=405DE6&style=for-the-badge&logo=linkedin&logoColor=white" alt=Linkedin>
-  </a>
-
-* <a href="https://github.com/JohanXxz" target="_blank">
+* <a href="https://github.com/JohanXTheKing" target="_blank">
     <img src="https://img.shields.io/badge/Github%20Profile-131313?style=for-the-badge&logo=github&logoColor=white" alt="Personal Website">
   </a>
