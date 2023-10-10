@@ -1,7 +1,7 @@
 # <h1 align="center">Room Homepage Master (Solution)</h1>
 
 <p align="center">
-  <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj">Frontend Mentor Challenge
+  <a href="https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq">Frontend Mentor Challenge
 </a>
 </p>
 
