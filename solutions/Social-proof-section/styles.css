@@ -164,6 +164,7 @@ body
 {
   .mainContainer
   {
+    width: 90%;
     margin-top: 50px;
     padding: 40px 15px;
   }
@@ -208,6 +209,10 @@ body
   {
     padding-top: 0;
     line-height: 2;
+  }
+  .box1--star
+  {
+    padding: 3px 0px;
   }
   .section2
   {
