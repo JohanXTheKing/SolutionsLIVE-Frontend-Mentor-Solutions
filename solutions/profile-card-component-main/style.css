@@ -1,0 +1,104 @@
+*{box-sizing: border-box; margin: 0;}
+
+:root
+{
+  --DarkCyan:                hsl(185, 75%, 39%);
+  --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --DarkGrayishBlue:         hsl(227, 10%, 46%);
+  --DarkGray:                hsl(0, 0%, 59%);
+}
+body
+{
+  font-family: 'Kumbh Sans', sans-serif;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: var(--DarkCyan);
+  position: relative;
+  background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+  background-repeat: no-repeat, no-repeat;
+  background-color: hsl(185deg, 75%, 39%);
+}
+main
+{
+  overflow: hidden;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #fff;
+  position: relative;
+  height: 330px;
+}
+main img:nth-child(1)
+{
+  width: 100%;
+}
+main img:nth-child(2)
+{
+  border-radius: 50%;
+  position: relative;
+  top: -50px;
+  outline: 5px solid #fff;
+}
+.Dates__Victor
+{
+  position: relative;
+  top: -50px;
+  height: 100%;
+  margin-top: 20px;
+}
+.date__name , .number__date
+{
+  color: var(--VeryDarkDesaturatedBlue);
+  font-weight: 700;
+}
+.date__name span
+{
+  color: var(--DarkGrayishBlue);
+  margin-left: 10px;
+}
+.span__follow
+{
+  color: var(--DarkGray);
+  font-size: .8em;
+}
+.date__city
+{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: .8em;
+  color: var(--DarkGray);
+}
+.hr
+{
+  border: none;
+  border-top: 1px solid var(--DarkGray);
+}
+.date__followers
+{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 30%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width:450px) 
+{
+  main 
+  {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+  }
+  main img:nth-child(1)
+  {
+    width: 100%;
+  }
+}
