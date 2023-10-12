@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions
-/solutions/QR code component">Ver demo</a> -
+/solutions/Order-summary-component">Ver demo</a> -
   <a href="https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/issues">Report bug</a> -
   <a href="https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/issues">Request Feature</a>
 </p>
@@ -20,7 +20,7 @@
 
 ---
 ## Links
-* Live Site URL: [CLICK HERE -->](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/Order)
+* Live Site URL: [CLICK HERE -->](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/Order-summary-component)
 
 ---
 
