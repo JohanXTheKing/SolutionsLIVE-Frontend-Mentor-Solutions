@@ -1,0 +1,157 @@
+
+*{box-sizing: border-box; margin: 0; padding: 0;}
+:root
+{
+    --tomato :         hsl(4, 100%, 67%);
+    --DarkSlateGrey:   hsl(234, 29%, 20%);
+    --CharcoalGrey:    hsl(235, 18%, 26%);
+    --Grey:            hsl(231, 7%, 60%);
+    --White:           hsl(0, 0%, 100%);
+}
+@font-face 
+{
+    font-family: 'RobotoTitle';
+    src: url("assets/fonts/Roboto-Bold.ttf");
+}
+@font-face 
+{
+    font-family: 'RobotoText';
+    src: url("assets/fonts/Roboto-Regular.ttf");
+}
+body
+{
+    height: 100vh;
+    background-color: var(--CharcoalGrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: RobotoText;
+    font-size: 16px;
+}
+.ContainerMain
+{
+    max-width: 650px;
+    height: 100%;
+    background-color: var(--White);
+}
+.ContainerMain__img
+{
+    background-image: url(assets/images/illustration-sign-up-mobile.svg);
+    background-repeat: no-repeat;
+    height: 43%;
+    background-size: cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.ContainerMain__text
+{
+    background-color: var(--White);
+}
+.ContainerMain__h1
+{
+    padding-top: 30px;
+    padding-left: 25px;
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: var(--DarkSlateGrey);
+}
+.ContainerMain__p
+{
+    padding: 25px;
+    line-height: 1.5;
+}
+.ContainerMain__list
+{
+    display: flex;
+    padding-left: 25px;
+}
+.ContainerMain__list__icon
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ContainerMain__list__icon img , .ContainerMain__list__text p
+{
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+.ContainerMain__form
+{
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.ContainerMain__form label
+{
+    color: var(--DarkSlateGrey);
+    font-size: .8rem;
+    font-weight: 700;
+}
+.inputEmailAddress
+{
+    width: 100%;
+    padding: 20px 0px 20px 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: none;
+}
+.inputEmailAddress__button
+{
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.email
+{
+    outline: 1px solid var(--Grey);
+}
+.inputEmailAddress__button:active
+{
+    background: linear-gradient(to right , #e64a6d, #ff693c);
+}
+.succesACTIVE
+{
+   max-width: 650px;
+   height: 100vh;
+   background-color: var(--White);
+   padding: 0px 25px;
+   display: none;
+}
+.succesACTIVE .succesACTIVE__img
+{
+    padding-top: 140px;
+    padding-bottom: 30px;
+}
+.succesACTIVE .succesACTIVE__img img 
+{
+    width: 60px;
+}
+.succesACTIVE .succesACTIVE__title
+{
+    font-size: 2.2rem;
+    color: var(--DarkSlateGrey);
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+.TEXT__alt
+{
+    color: var(--CharcoalGrey);
+}
+.BUTTONsubmit
+{
+    width: 85%;
+    padding: 20px 0px 20px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    font-size: 1.1rem;
+    font-weight: 700;
+    position: absolute;
+    cursor: pointer;
+    bottom: 50px;
+}
