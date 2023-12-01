@@ -41,6 +41,7 @@ main .parrafo
 {
   font-size: .8rem;
   font-weight: 500;
+  padding-left: 20px;
   color: var(--DesaturatedBlue);
 }
 main .date
