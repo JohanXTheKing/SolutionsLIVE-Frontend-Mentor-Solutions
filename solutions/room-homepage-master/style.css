@@ -1,0 +1,454 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+:root
+{
+  --DarkGray:     hsl(0, 0%, 63%);
+  --VeryDarkGray: hsl(0, 0%, 27%);
+}
+::selection
+{
+    background-color: #000000cd;
+    color: #fff;
+}
+body
+{
+  font-size: 12px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: 'League Spartan', sans-serif;
+  min-height: 100vh;
+}
+.mainContainer
+{
+    width: 90vw;
+    height: 60vh;
+}
+.header
+{
+    width: 60%;
+    position: relative;
+    height: 100%;
+}
+.header div .imgS
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.nav-desktop {
+    height: 25%;
+    position: absolute;
+    top: 0;
+    width: 55%;
+    z-index: 100;
+    padding-left: 10rem;
+    font-size: 1em;
+}
+.nav_list
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    list-style-type: none;
+}
+.nav_list a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+}
+.nav_list a:hover
+{
+    font-size: 1.4em;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 2px 0px #fff;
+}
+.menu_close, .menu
+{
+    display: none;
+}
+.logo
+{
+  position: absolute;
+  z-index: 90;
+  top: 3rem;
+  left: 4rem;
+  width: 3rem;
+}
+.movilIMG
+{
+  display: none;
+}
+.deskIMG
+{
+  display: block;
+}
+
+.displayContainer1
+{
+    overflow: hidden;
+    display: flex;
+    height: 65%;
+    position: relative;
+    width: 100%;
+}
+.mainDiv2
+{
+    overflow: hidden;
+    position: relative;
+    width: 40%;
+}
+.mainDiv2 div 
+{
+    padding: 5rem 4rem 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.displayContainer2 
+{
+    display: flex;
+    height: 35%;
+}   
+.displayContainer2 div:nth-child(1),
+.displayContainer2 div:nth-child(3)
+{
+    width: 30%;
+}
+.displayContainer2 div:nth-child(2)
+{
+    width: 40%;
+}
+.buttonsChanges
+{
+    position: absolute;
+    bottom: 0;
+    right: -17%;
+    width: 17%;
+    height: 16%;
+    background-color: #000;
+    display: flex;
+    z-index: 200;
+}
+.buttonsChanges button
+{
+    width: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: #000;
+    color:var(--VeryDarkGray);
+    outline: none;
+    transition: .2s;
+}
+.buttonsChanges button:active
+{
+    background-color: var(--VeryDarkGray);
+}
+button img
+{
+    width: 10px;
+}
+.mainDiv2__title
+    {
+        font-size: 3em;
+        font-weight: bolder;
+    }
+.mainDiv2__paragraphM
+{
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: var(--DarkGray);
+    line-height: 1.4;
+}
+.mainDiv2__a
+{
+    display: flex;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+.mainDiv2__a p 
+{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-right: 25px;
+    color: #000;
+    font-weight: bold;
+}
+.mainDiv2__a p:hover
+{
+    color: var(--VeryDarkGray);
+}
+.mainDiv3 img,
+.mainDiv5 img 
+{
+    width: 100%;
+    height: 100%;
+}
+.mainDiv4
+    {
+        padding:2.5rem 2rem;
+        overflow: hidden;
+    }
+    .mainDiv4 h2 
+    {
+        text-transform: uppercase;
+        font-size: .8rem;
+        letter-spacing: 5px;
+        color: #000;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .mainDiv4 p 
+    {
+        color: var(--DarkGray);
+        line-height: 1.5;
+        font-size: .9rem;
+    }
+@media screen and (max-width: 600px)
+{
+    .mainContainer
+    {
+        width: 100vw;
+        height: 200vh;
+    }
+    .displayContainer1,
+    .displayContainer2
+    {
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+    }
+    .displayContainer1 .mainDiv2,
+    .displayContainer1 header
+    {
+        width: inherit;
+    }
+    .displayContainer1 header
+    {
+        height: 55%;
+        position: relative;
+    }
+    .nav-desktop
+    {
+        display: none;
+    }
+    .menu_close,
+    .menu
+    {
+      display: block;
+    }
+    .menu img, 
+    .menu_close img
+    {
+      width: 30%;
+      height: 30%;
+    }
+    .nav
+    {
+        position: relative;
+        width: 100%;
+        top: 0;
+        display: flex;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background-color: #fff;
+        z-index: 100;
+        opacity: 0;
+    }
+    .nav.visible
+    {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu, .menu_close
+    {
+        position: absolute;
+        width: 100px;
+        border: none;
+        top: 0;
+        left: -15px;
+    }
+    .menu
+    {
+        height: 30%;
+        z-index: 130;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+    }
+    .menu_close
+    {
+        outline: none;
+        height: 100%;
+        z-index: 150;
+        background-color: #fff;
+    }
+    .nav_list
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 100px;
+        padding-right: 15px;
+        width: 100%;
+        list-style-type: none;
+        gap: 1rem;
+    }
+    .nav_list a
+    {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .displayContainer1 .mainDiv2
+    {
+        height: 45%;
+    }
+    .mainDiv2 div
+    {
+        padding:3rem 2rem 2rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+    }
+    .mainDiv2
+    {
+        position: relative;
+        width: 100%;
+        z-index: 160;
+    }
+   
+    .mainDiv2__title
+    {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .mainDiv2__paragraphM
+    {
+        display: block;
+        margin-top: 15px;
+        font-size: 1.2em;
+        color: var(--DarkGray);
+        line-height: 1.6;
+    }
+    .mainDiv2__a
+    {
+        display: flex;
+        margin-top: 2rem;
+        text-decoration: none;
+    }
+    .mainDiv2__a p 
+    {
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        margin-right: 25px;
+        color: #000;
+        font-weight: bold;
+    }
+    .logo
+    {
+        top: 12%;
+        left: 40%;
+        width: 4rem;
+        height: 1rem;
+    }
+    .movilIMG
+    {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 50;
+    }
+    .movilIMG img
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .mainDiv4
+    {
+        padding:2.5rem 2rem;
+    }
+    .mainDiv4 h2 
+    {
+        text-transform: uppercase;
+        font-size: .8rem;
+        letter-spacing: 5px;
+        color: #000;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .mainDiv4 p 
+    {
+        color: var(--DarkGray);
+        line-height: 1.5;
+        font-size: .9rem;
+    }
+    .mainDiv3,
+    .mainDiv5
+    {
+        height: 14rem;
+    }
+    .mainDiv3 img,
+    .mainDiv5 img
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .deskIMG
+    {
+        display: none;
+    }
+    .buttonsChanges
+    {
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        height: 16%;
+    }
+    .buttonsChanges button
+    {
+        width: 50%;
+        background-color: #000;
+        color:var(--VeryDarkGray);
+        border: none;
+        outline: none;
+    }
+    button img
+    {
+        width: 10px;
+    }
+   
+    /*
+    -- Por alguna razon que no entiendo , en el siguiente codigo no logro hacer que los divs obtengan el ancho del 100% con una sola linae 
+    */
+    .displayContainer2 div:nth-child(1),
+    .displayContainer2 div:nth-child(2),
+    .displayContainer2 div:nth-child(3)
+    {
+        width: inherit;
+    }
+    .displayContainer2 div:nth-child(1),
+    .displayContainer2 div:nth-child(3)
+    {
+        height: 30%;
+    }
+    .displayContainer2 div:nth-child(2)
+    {
+        height: 40%;
+    }
+}
