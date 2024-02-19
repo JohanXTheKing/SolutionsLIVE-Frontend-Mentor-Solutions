@@ -35,7 +35,7 @@ body
     width: 100%;
     height: 100%;
 }
-#navDesktop 
+.header .nav-desktop
 {
     height: 25%;
     position: absolute;
@@ -238,8 +238,7 @@ button img
         height: 55%;
         position: relative;
     }
-    ſ
-    #navDesktop
+    .nav-desktop
     {
         display: none;
     }
