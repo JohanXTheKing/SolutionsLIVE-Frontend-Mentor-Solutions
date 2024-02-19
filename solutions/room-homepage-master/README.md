@@ -14,11 +14,13 @@
 
 ![IMAGEN](images/mobile.png) 
 
-![IMAGEN](images/mobile%20(1).png)
+![IMAGEN](images/mobile2.png.png)
 
 ## Links
 
-- Solution URL: [INDEX.HTML]([https://](https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/blob/main/solutions/room-homepage-master/index.html))
+- Solution URL: [INDEX.HTML](https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/tree/main/solutions/room-homepage-master)
+
+
 - Live Site URL: [ROOM-HOMEPAGE-MASTER](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/room-homepage-master/#)
 
 # My process
