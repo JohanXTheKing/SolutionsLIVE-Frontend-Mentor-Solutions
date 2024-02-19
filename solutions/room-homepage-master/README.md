@@ -14,7 +14,7 @@
 
 ![IMAGEN](images/mobile.png) 
 
-![IMAGEN](images/mobile2.png.png)
+![IMAGEN](images/mobile2.png)
 
 ## Links
 
