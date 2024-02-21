@@ -1,7 +1,6 @@
 # Frontend Mentor - Room homepage solution
 <p align="center">
-  <a href="https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions
-/solutions/room-homepage-master">Ver demo</a> -
+  <a href="https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/room-homepage-master/">Ver demo</a> -
    <a href="https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/issues">Report bug</a> -
   <a href="https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/issues">Request Feature</a>
 </p>
