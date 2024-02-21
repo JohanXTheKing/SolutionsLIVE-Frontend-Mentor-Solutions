@@ -21,7 +21,7 @@ body
     .main__Container
     {
         width: 88vw;
-        height: 85vh;
+        height: 65vh;
         padding: 1.5rem;
         background-color: #fff;
         border-radius: 20px;
@@ -32,6 +32,8 @@ body
     .main__Container img
     {
         width: 100%;
+        object-fit: cover;
+        height: 40%;
         border-radius: 10px;
     } 
     .main__Container .learning
