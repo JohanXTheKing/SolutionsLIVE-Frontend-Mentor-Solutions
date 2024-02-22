@@ -1,0 +1,73 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+:root
+{
+    --Green:    hsl(75, 94%, 57%);
+    --White:    hsl(0, 0%, 100%);
+    --Grey:     hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+body
+{
+    font-size: 14px;
+    min-height: 100vh;
+    background-color: var(--OffBlack);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.main
+{
+    background-color: var(--DarkGrey);
+    width: 90vw;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    padding: 1.4rem 1.4rem 0;
+    border-radius: 1rem;
+    max-width: 18rem;
+    padding-bottom: .4rem;
+}
+.date_city
+{
+    color: var(--Green);
+    font-weight: 800;
+    font-size: .7rem;
+    margin-top: .5rem;
+}
+.msg
+{
+    color: var(--White);
+    font-size: .8rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+.main img
+{
+    border-radius: 50%;
+    width: 28%;
+}
+.main .name
+{
+    color: var(--White);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+.main button
+{
+    background-color: var(--Grey);
+    padding: .8rem 0;
+    width: 100%;
+    cursor: pointer;
+    border-radius: .5rem;
+    border: none;
+    color: var(--White);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.main button:active
+{
+    background-color: var(--Green);
+    color: var(--OffBlack);
+}
