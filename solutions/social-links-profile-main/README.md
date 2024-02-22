@@ -1,4 +1,4 @@
-# Blog Preview Card Main (solution)
+# Social Links Profile Main (solution)
 <p align="center">
     <a href="https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/social-links-profile-main/">Ver demo</a> -
    <a href="https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/issues">Report bug</a> -
