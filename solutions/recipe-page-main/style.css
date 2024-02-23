@@ -1,0 +1,179 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+:root
+{
+    --Nutmeg:        hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+    --White:         hsl(0, 0%, 100%);
+    --RoseWhite:     hsl(330, 100%, 98%);
+    --Eggshell:      hsl(30, 54%, 90%);
+    --LightGrey:     hsl(30, 18%, 87%);
+    --WengeBrown:    hsl(30, 10%, 34%);
+    --DarkCharcoal:  hsl(24, 5%, 18%);
+}
+body
+{
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    color: var(--WengeBrown);
+    background: var(--Eggshell);
+}
+.main
+{
+    width: 45rem;
+    margin: 5em 0;
+    padding-top: 2.5rem;
+    border-radius: 1rem;
+    background-color: var(--White);
+}
+.main .main_img
+{
+    width: 90%;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    border-radius: 1rem;
+}
+.main_text
+{
+    padding: 1.9rem;
+}
+.main_text .main_h1
+{
+    color: var(--DarkCharcoal);
+    font-family: "Young Serif", serif;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    line-height: 1;
+    font-weight: 400;
+}
+.main_text .main_paragraph
+{
+    line-height: 1.5;
+    font-size: 1em;
+}
+.time_preparation
+{
+    background-color: var(--RoseWhite);
+    border-radius: 1rem;
+    padding: 1.4rem;
+    margin-top: 1.5rem;
+}
+.time_preparation h3
+{
+    color: var(--DarkRaspberry);
+    font-size: 1.3rem;
+}
+.time_preparation .recet
+{
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+.recet .span
+{
+    line-height: 2;
+    margin-left: .7rem ;
+}
+.span
+{
+    color: var(--WengeBrown);
+    font-weight: bold;
+}
+h2
+{
+    color: var(--Nutmeg);
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: "Young Serif", serif;
+    padding: 1.4rem 0;
+}
+.main_h2__list
+{
+    padding-left: 1.3rem;
+    line-height: 1.8;
+}
+.main_h2__list li
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.list_ord
+{   width: 100%;
+    font-size: 1rem;
+    border-top: 1px solid var(--LightGrey);
+    border-bottom: 1px solid var(--LightGrey);
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5;
+}
+.list_ord_1
+{
+    display: flex;
+}
+.span_Number
+{
+    display: block;
+    color: var(--DarkRaspberry);
+    font-weight: bold;
+    width: 14%;
+    padding-left: .8rem;
+}
+.list_ord_1 p
+{
+    width: 86%;
+    margin-bottom: .6rem;
+}
+.nutrition_description
+{
+    line-height: 1.5;
+    font-size: 1rem;
+}
+.nutrition_table
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 1rem;
+}
+.nutrition_table p,
+.nutrition_table span
+{
+    padding: 1rem;
+}
+.nutrition_table p
+{
+    margin-left: 1rem;
+}
+.nutrition_table span
+{
+    color: var(--DarkRaspberry);
+    font-weight: 600;
+}
+.nutrition_table p:nth-child(1),
+.nutrition_table span:nth-child(2),
+.nutrition_table p:nth-child(3),
+.nutrition_table span:nth-child(4),
+.nutrition_table p:nth-child(5),
+.nutrition_table span:nth-child(6)
+{
+    border-bottom: 1px solid var(--LightGrey);
+}
+@media screen and (max-width: 600px)
+{
+    .main
+    {
+        width: 100vw;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .main .main_img
+    {
+        width: 100%;
+        border-radius: 0;
+    }
+}
