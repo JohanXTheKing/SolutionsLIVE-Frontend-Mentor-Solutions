@@ -26,7 +26,7 @@ body
 {
     width: 45rem;
     margin: 5em 0;
-    padding-top: 2.5rem;
+    padding-top: 3rem;
     border-radius: 1rem;
     background-color: var(--White);
 }
@@ -47,7 +47,7 @@ body
     color: var(--DarkCharcoal);
     font-family: "Young Serif", serif;
     margin-bottom: 1.5rem;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     line-height: 1;
     font-weight: 400;
 }
@@ -119,8 +119,8 @@ h2
 {
     display: block;
     color: var(--DarkRaspberry);
+    width: 8%;
     font-weight: bold;
-    width: 14%;
     padding-left: .8rem;
 }
 .list_ord_1 p
@@ -175,5 +175,13 @@ h2
     {
         width: 100%;
         border-radius: 0;
+    }
+    .span_Number
+    {
+        width: 14%;
+    }
+    .main_text .main_h1
+    {
+        font-size: 2.2rem;
     }
 }
