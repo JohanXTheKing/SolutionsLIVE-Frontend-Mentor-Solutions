@@ -18,7 +18,7 @@
 - Solution URL: [INDEX.HTML](https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/tree/main/solutions/recipe-page-main)
 
 
-- Live Site URL: [ROOM-HOMEPAGE-MASTER](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/recipe-page-main/#)
+- Live Site URL: [Recipe Page Main](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/recipe-page-main/#)
 
 # My process
 
