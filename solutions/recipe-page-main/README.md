@@ -15,7 +15,7 @@
 
 ## Links
 
-- Solution URL: [INDEX.HTML](https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/tree/main/solutions/recipe-page-main)
+- Solution URL: [INDEX.HTML]([https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/tree/main/solutions/recipe-page-main](https://www.frontendmentor.io/solutions/simple-omelette-recipe-solution-using-flex-and-grid-9qqeHFSAiX))
 
 
 - Live Site URL: [Recipe Page Main](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/recipe-page-main/#)
