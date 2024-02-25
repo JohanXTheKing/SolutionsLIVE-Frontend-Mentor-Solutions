@@ -1,67 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Newsletter sign-up form with success message.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Newsletter sign-up form with success message.</title>
 </head>
 <body>
-  <main class="ContainerMain" id="main">
-    <div class="ContainerMain__img">
-    </div>
-    <div class="ContainerMain__text">
-      <h1 class="ContainerMain__h1"> Stay updated!</h1>
-      <p class="ContainerMain__p">Join 60,000+ product managers receiving monthly updates on:</p>
-      <div class="ContainerMain__list">
-        <div class="ContainerMain__list__icon">
-          <img src="assets/images/icon-list.svg">
-          <img src="assets/images/icon-list.svg">
-          <img src="assets/images/icon-list.svg">
+    <main class="main_container" id="main">
+        <div class="main_container__img"></div>
+        <div class="main_container__text">
+            <h1> Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <div class="main_details">
+                <div>
+                    <img src="assets/images/icon-list.svg" alt="">
+                    <p class="product">Product discovery and building what matters</p>
+                </div>
+                <div>
+                    <img src="assets/images/icon-list.svg" alt="">
+                    <p>Measuring to ensure updates are a success</p>
+                </div>
+                <div>
+                    <img src="assets/images/icon-list.svg" alt="">
+                    <p>And much more!</p>
+                </div>
+            </div>
+            <form class="main_form">
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="email@company.com">
+                <button title="subscribe" id="subMit">Subscribe to monthly newsletter</button>
+            </form>
         </div>
-        <div class="ContainerMain__list__text">
-          <p class="ContainerMain__list__text__p">
-            Product discovery and building what matters
-          </p>
-          <p class="ContainerMain__list__text__p">
-            Measuring to ensure updates are a success
-          </p>
-          <p class="ContainerMain__list__text__p">     
-          And much more!
-          </p>
+    </main>
+    <div class="activeSuccess" id="activeSuccess">
+        <div class="activeSuccess_img">
+          <img src="assets/images/icon-success.svg" alt="ICON-SUCCESS">
+        </div>
+        <h2 class="succesACTIVE__title">
+          Thanks for subscribing!
+        </h2>
+        <div class="TEXT__alt" id="TEXT__alt">
          
         </div>
+        <button class="BUTTONsubmit">
+          Dismiss message
+        </button>
       </div>
-      <form action="" method="post" id="form" class="ContainerMain__form">
-        <label for="emailAddress">Email address </label><br>
-        <input class="inputEmailAddress email" type="email" placeholder="email@company.com" id="emailAddress">
-        <input class="inputEmailAddress inputEmailAddress__button" onclick="Enviar()" type="button" value="Subscribe to monthly newsletter">
-      </form>
-    </div>
-  </main>
-  <div class="succesACTIVE" id="successACTIVE">
-    <div class="succesACTIVE__img">
-      <img src="assets/images/icon-success.svg" alt="ICON-SUCCESS">
-    </div>
-    <h2 class="succesACTIVE__title">
-      Thanks for subscribing!
-    </h2>
-    <div class="TEXT__alt" id="TEXT__alt">
-     
-    </div>
-    <button class="BUTTONsubmit">
-      Dismiss message
-    </button>
-  </div>
-
-   <script src="main.js"></script>
 </body>
 </html>
-
-<!--
-  NOTAS PARA EL README
-
-  -Creen q deberia usar la etiqueta span para guardar la imagen o podria simplemente colocarla sin envoltorio
-  -alguna idea de como modificar el color del placeholder dentro del primer input(email@company.com) *Usando js al presionar el bototn "Suscribe to monntbly newsletter" *** QUIERO RESALTAR ERROR SI EL PRIMER INPUT ESTA VACIO :)
-  -Quiero agregar el texto "valid email required" con js despues de presionar el boton enviar : como lo harian ustedes ¿
