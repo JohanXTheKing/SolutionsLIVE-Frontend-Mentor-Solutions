@@ -30,23 +30,49 @@
             <form class="main_form">
                 <label for="email">Email address</label>
                 <input type="email" id="email" placeholder="email@company.com">
-                <button title="subscribe" id="subMit">Subscribe to monthly newsletter</button>
             </form>
+            <button title="subscribe" onclick="subMit()">Subscribe to monthly newsletter</button>
         </div>
     </main>
     <div class="activeSuccess" id="activeSuccess">
         <div class="activeSuccess_img">
           <img src="assets/images/icon-success.svg" alt="ICON-SUCCESS">
         </div>
-        <h2 class="succesACTIVE__title">
+        <h2 class="activeSuccess__h2">
           Thanks for subscribing!
         </h2>
-        <div class="TEXT__alt" id="TEXT__alt">
+        <div class="text__alt" id="text__alt">
          
         </div>
-        <button class="BUTTONsubmit">
+        <button class="Dismiss_Button" onclick="volver()">
           Dismiss message
         </button>
       </div>
+      <script>
+        function subMit()
+        {
+            let main = document.getElementById("main")
+            let activeSuccess = document.getElementById("activeSuccess")
+            let email = document.getElementById("email")
+            let text__alt = document.getElementById("text__alt")
+            if(email.value.length == 0)
+            {
+                alert("escribe algo")
+            }else
+            {
+              main.style.display = "none"
+              activeSuccess.style.display = "block"
+              text__alt.innerHTML = ` A confirmation email has been sent to <b>${email.value}</b>
+              Please open it and click the button inside to confirm your subscription.`;
+            }
+        }
+        function volver()
+        {
+            let main = document.getElementById("main")
+            let activeSuccess = document.getElementById("activeSuccess")
+            main.style.display = "block"
+            activeSuccess.style.display = "none"
+        }
+      </script>
 </body>
 </html>
