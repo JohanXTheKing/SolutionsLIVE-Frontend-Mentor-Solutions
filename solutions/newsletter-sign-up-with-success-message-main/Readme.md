@@ -19,7 +19,7 @@
 - Solution URL: [INDEX.HTML](https://www.frontendmentor.io/solutions/simple-omelette-recipe-solution-using-flex-and-grid-9qqeHFSAiX)
 
 
-- Live Site URL: [Recipe Page Main](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/newsletter-sign-up-with-success-message-main/#)
+- Live Site URL: [Newsletter Sign Up With Success Message Main](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/newsletter-sign-up-with-success-message-main/#)
 
 # My process
 
