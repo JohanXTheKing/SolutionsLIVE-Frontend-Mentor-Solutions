@@ -12,7 +12,7 @@
 
 ## Screenshot(For mobil)
 
-![IMAGEN](assets/images/mobile%20(1).png)
+![IMAGEN](assets/images/mobile.png)
 
 ## Links
 
