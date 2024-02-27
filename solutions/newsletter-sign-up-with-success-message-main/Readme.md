@@ -16,7 +16,7 @@
 
 ## Links
 
-- Solution URL: [INDEX.HTML](https://www.frontendmentor.io/solutions/simple-omelette-recipe-solution-using-flex-and-grid-9qqeHFSAiX)
+- Solution URL: [INDEX.HTML](https://www.frontendmentor.io/solutions/my-solution-for-challenge-newslettersignupwithsuccessmessagema-8hGCSmReky)
 
 
 - Live Site URL: [Newsletter Sign Up With Success Message Main](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/newsletter-sign-up-with-success-message-main/#)
