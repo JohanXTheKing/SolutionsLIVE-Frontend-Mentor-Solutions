@@ -16,7 +16,7 @@
 
 ## Links
 
-- Solution URL: [INDEX.HTML](https://www.frontendmentor.io/solutions/my-solution-for-challenge-newslettersignupwithsuccessmessagema-8hGCSmReky)
+- Solution URL: [INDEX.HTML](https://www.frontendmentor.io/solutions/faq-accordion-solutionusing-flex-and-grid-daO2ydsTuB)
 
 
 - Live Site URL: [FAQ accordion main](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/faq-accordion-main/)

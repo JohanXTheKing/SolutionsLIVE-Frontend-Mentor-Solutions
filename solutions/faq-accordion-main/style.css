@@ -28,31 +28,25 @@ body
 {
     width: 100vw;
     background-image: url(assets/images/background-pattern-desktop.svg);
-    height: 15rem;
+    height: 20rem;
     position: absolute;
     top: 0;
 }
-@media screen and (max-width: 600px)
-{
-    .main_img
-    {
-        background-image: url(assets/images/background-pattern-mobile.svg);
-    }
-    .Faqs_section
-    {
-        top: 2rem;
-    }
-}
+
 .Faqs_section
 {
     width: 90vw;
     max-width: 600px;
-    padding: 1.4rem;
+    padding: 2rem;
     position: relative;
-    top: 1rem;
+    top: -2rem;
     border-radius: .5rem;
     background-color: var(--White);
     box-shadow: 0px 2px 206px -40px rgba(140,105,145,0.75);
+}
+.title_faqs h1
+{
+    font-size: 3rem;
 }
 .title_faqs
 {
@@ -61,7 +55,7 @@ body
 }
 .title_faqs img
 {
-    width: 1.6rem;
+    width: 2rem;
     margin-right: 1.5rem;
 }
 .container_faqs .faqz
@@ -113,4 +107,25 @@ body
 {
     height: auto;
     padding: .5rem 0 2.5rem 0;
+}
+@media screen and (max-width: 600px)
+{
+    .main_img
+    {
+        background-image: url(assets/images/background-pattern-mobile.svg);
+        height: 15rem;
+    }
+    .Faqs_section
+    {
+        margin-top: 6rem;
+        padding: 1.4rem;
+    }
+    .title_faqs img
+    {
+        width: 1.6rem;
+    }
+    .title_faqs h1
+    {
+        font-size: 2rem;
+    }
 }
