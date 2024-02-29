@@ -3,7 +3,7 @@
 {
     --White: hsl(0, 0%, 100%);
     --LightPink: hsl(275, 100%, 97%);
-    --GrayishPurple: hsl(292, 16%, 49%);
+    --GrayishPurple: #8c6991;
     --DarkPurple: hsl(292, 42%, 14%);
 }
 body
@@ -25,22 +25,26 @@ body
 .main_img
 {
     width: 100vw;
-    object-fit: cover;
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    height: 15rem;
 }
-.main_img img
+@media screen and (max-width: 600px)
 {
-    width: 100%;
-    height: 100%;
+    .main_img
+    {
+        background-image: url(assets/images/background-pattern-mobile.svg);
+    }
 }
 .Faqs_section
 {
     width: 90vw;
+    max-width: 600px;
     padding: 1.4rem;
     position: relative;
     top: -5rem;
     border-radius: .5rem;
     background-color: var(--White);
-    box-shadow: 0 .1rem .8rem var(--GrayishPurple);
+    box-shadow: 0px 2px 206px -40px rgba(140,105,145,0.75);
 }
 .title_faqs
 {
@@ -86,6 +90,7 @@ body
 .container_faqs .faqz.active .label::before
 {
     content: "-";
+    background-color: var(--DarkPurple);
 }
 .container_faqs .faqz .content
 {
