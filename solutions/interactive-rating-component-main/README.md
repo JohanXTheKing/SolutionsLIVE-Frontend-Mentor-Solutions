@@ -53,7 +53,7 @@
 
 - |||
   | :----- | :----- |
-  | Solution URL: | [FAQ Accordion Card 🎯 [ USING DETAIL SUMMARY - VANILLA CSS3 - BEM ]]() |
+  | Solution URL: | [Interactive Rating Component Main](https://www.frontendmentor.io/solutions/interactive-rating-component-solution-with-flex-and-grid-vMj3C1LMTz) |
   | Live Site URL: | [https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/interactive-rating-component-main/](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/interactive-rating-component-main/) |
   |||
 
