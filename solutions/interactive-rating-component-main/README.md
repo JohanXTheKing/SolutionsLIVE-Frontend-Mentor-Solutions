@@ -20,8 +20,7 @@
 <div align="center">
   <!-- Profiles -->
   <a href="https://www.frontendmentor.io/profile/JohanXTheKing" target="_blank">
-    <img src="https://img.shields.io/badge/Profile-Johanx
-    -eee?style=for-the-badge&logo=frontendmentor" alt="Johan Profile">
+    <img src="https://img.shields.io/badge/Profile-Johanx-eee?style=for-the-badge&logo=frontendmentor" alt="Johan Profile">
   </a> &nbsp;&nbsp;&nbsp;
 
   <!-- Status -->
