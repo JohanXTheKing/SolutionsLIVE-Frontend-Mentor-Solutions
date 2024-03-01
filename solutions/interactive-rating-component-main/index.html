@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Interactive rating component</title>
+</head>
+<body>
+  <main class="main" id="main">
+    <div class="img">
+      <img src="images/icon-star.svg" alt="star_icon_Img">
+    </div>
+    <p class="main_question">How did we do?</p>
+    <p class="main_text">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <div class="main_numbers">
+      <button onclick="enviar1()">1</button>
+      <button onclick="enviar2()">2</button>
+      <button onclick="enviar3()">3</button>
+      <button onclick="enviar4()">4</button>
+      <button onclick="enviar5()">5</button>
+    </div>
+   <button id="button" onclick="enviar()">SUBMIT</button>
+  </main>
+      <div class="res" id="res">
+        <img src="images/illustration-thank-you.svg" alt="imagen_de_un_cajero">
+        <p class="p1" id="p1"></p>
+        <p class="p2"> Thank you!</p>
+        <p class="p3">
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+      <script>
+        var selec = document.getElementById("p1");
+
+        function enviar1()
+        {
+          selec.innerHTML = `You selected 1 out of 5`;
+        }
+        function enviar2()
+        {
+          selec.innerHTML = `You selected 2 out of 5`;
+        }
+        function enviar3()
+        {
+          selec.innerHTML = `You selected 3 out of 5`;
+        }
+        function enviar4()
+        {
+          selec.innerHTML = `You selected 4 out of 5`;
+        }
+        function enviar5()
+        {
+          selec.innerHTML = `You selected 5 out of 5`;
+        }
+       
+        function enviar() {  
+          const mainElement = document.getElementById("main");
+          const resultElement = document.getElementById("res");
+          mainElement.style.display = "none";
+          resultElement.style.display = "block";
+        }
+      
+        document.getElementById("myButton").addEventListener("click", enviar);
+      
+      </script>
+</body>
+</html>

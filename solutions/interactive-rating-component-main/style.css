@@ -1,0 +1,164 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+:root
+{
+    --Orange:        hsl(25, 97%, 53%);
+    --White:         hsl(0, 0%, 100%);
+    --LightGrey:     hsl(217, 12%, 63%);
+    --MediumGrey:    hsl(216, 12%, 54%);
+    --DarkBlue:      hsl(215, 20%, 16%);
+    --VeryDarkBlue:  hsl(216, 12%, 8%);
+}
+body
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: var(--VeryDarkBlue);
+    color: #fff;
+    font-family: "Overpass", sans-serif;
+}
+.main, .res
+{
+    width: 25rem;
+    background-color: #202630;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.main_question
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.res
+{
+    text-align: center;
+    display: none;
+}
+.res img
+{
+    width: 11rem;
+}
+.res .p1
+{
+    padding: .4rem .8rem;
+    width: 60%;
+    margin: 1.5rem auto;
+    color: var(--Orange);
+    background-color: #262f38;
+    border-radius: 1rem;
+}
+.res .p2
+{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: .8rem;
+}
+.res .p3
+{
+    color: var(--LightGrey);
+    line-height: 1.5;
+}
+.main_text
+{
+    color: var(--LightGrey);
+    padding-top: 1rem;
+    padding-bottom: .8rem;
+    line-height: 1.5;
+    font-size: .9rem;    
+}
+#button
+{
+    width: 100%;
+    padding: .8rem 0;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    letter-spacing: .3rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--Orange);
+    color: var(--White);
+    transition: .2s;
+    font-weight: bold;
+}
+#button:active
+{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+.main .img
+{
+    border-radius: 50%;
+    background-color: #262f38;
+    width:  3em;
+    height: 3em;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .img img
+{
+    width:  35%;
+    height: 35%;
+}
+.main_numbers
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    text-align: center;
+}
+.main_numbers button
+{
+    background-color: #262f38;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: var(--LightGrey);
+    width:  3em;
+    height: 3em;
+    transition: .2s;
+}
+.main_numbers button:hover
+{
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
+.main_numbers button:active
+{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+@media screen and (max-width: 600px) 
+{
+    .main
+    {
+        max-width: 90vw;
+        padding: 1.2rem;
+    }
+    .res
+    {
+        max-width: 90vw;
+        padding: 2.5rem 0;
+    }
+    #button
+    {
+        padding: 1rem 0;
+    }
+    .main_numbers button
+    {
+        font-size: 1rem;
+    }
+    .res .p1
+    {
+        padding: .4rem 0;
+    }
+    .res .p3
+    {
+        padding: 0 1rem;
+    }
+}
