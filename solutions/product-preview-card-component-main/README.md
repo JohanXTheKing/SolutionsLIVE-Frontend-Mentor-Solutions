@@ -6,8 +6,8 @@
 </p>
 
 <p align="center">
-  <a href="https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions
-/solutions/QR code component">Ver demo</a> -
+  <a href="https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/product-preview-card-component-main
+">Ver demo</a> -
   <a href="https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/issues">Report bug</a> -
   <a href="https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/issues">Request Feature</a>
 </p>
@@ -21,7 +21,8 @@
 ---
 ## Links
 
-* Live Site URL: [CLICK HERE -->](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/QR-code-component)
+* Live Site URL: [CLICK HERE -->](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/product-preview-card-component-main
+)
 ---
 
 ## Built With 
