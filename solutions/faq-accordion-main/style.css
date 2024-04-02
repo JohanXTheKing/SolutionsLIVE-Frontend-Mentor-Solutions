@@ -61,16 +61,17 @@ body
 .container_faqs .faqz
 {
     position: relative;
+    margin-bottom: 2rem;
 }
 .container_faqs .faqz .label
 {
     padding-right: 2em;
     position: relative;
+    margin-bottom: 1.5rem;
     font-size: 1.2rem;
     cursor: pointer;
     font-weight: 500;
     list-style: none;
-    margin-bottom: 1.5rem;
 }
 
 details .label:before
@@ -95,7 +96,8 @@ details .label:before
 {
     transition: .5s;
     color: var(--GrayishPurple);
-    margin-bottom: 2rem;
+    line-height: 1.5;
+    margin-bottom: 3.5rem;
 }
 details[open] .label::before
 {
