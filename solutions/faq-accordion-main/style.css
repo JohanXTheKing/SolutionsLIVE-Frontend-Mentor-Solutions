@@ -42,7 +42,7 @@ body
     top: -2rem;
     border-radius: .5rem;
     background-color: var(--White);
-    box-shadow: 0px 2px 206px 20px rgba(140,105,145,0.75);
+    box-shadow: 0px 1px 106px 6px rgba(140,105,145,0.75);
 }
 .title_faqs
 {
