@@ -39,7 +39,7 @@ body
     max-width: 600px;
     padding: 2rem;
     position: relative;
-    top: -2rem;
+    top: -1rem;
     border-radius: .5rem;
     background-color: var(--White);
     box-shadow: 0px 1px 106px 6px rgba(140,105,145,0.75);
@@ -51,11 +51,11 @@ body
 }
 .title_faqs h1
 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 .title_faqs img
 {
-    width: 2rem;
+    width: 3rem;
     margin-right: 1.5rem;
 }
 .container_faqs .faqz
