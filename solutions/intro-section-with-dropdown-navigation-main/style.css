@@ -1,0 +1,78 @@
+*{box-sizing: border-box; margin:  0; padding: 0}
+
+:root
+{
+    --AlmostWhite:  hsl(0, 0%, 98%);
+    --MediumGray:   hsl(0, 0%, 41%);
+    --AlmostBlack:  hsl(0, 0%, 8%);
+    --fonMedium : 500;
+    --fonBold:    700;
+}
+
+body
+{
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: "Epilogue", sans-serif;
+}
+.main .main_header nav
+{
+    display: flex;
+    padding: 1.8rem 1rem ;
+    justify-content: space-between;
+}
+.backgroundSnap
+{
+    width: 100vw;
+    height: 45vh;
+    background-image: url(images/image-hero-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main_text
+{
+    text-align: center;
+}
+.main_text h1
+{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.main_text p
+{
+    color: var(--MediumGray);
+    line-height: 1.5;
+    padding:  .5rem;
+    font-size: 1rem;
+}
+.main_text button
+{
+    padding: .8rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    font-weight: var(--fonBold);
+    font-size: 1rem;
+    color: var(--AlmostWhite);
+    background-color: var(--AlmostBlack);
+    cursor: pointer;
+    outline: none;
+    margin-top: 1rem;
+}
+.main_text button:active
+{
+    background-color: var(--AlmostWhite);
+    color: var(--AlmostBlack);
+    transition: .3s;
+    outline: 1px solid var(--AlmostBlack);
+}
+.containerMark
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+.containerMark img
+{
+    width: 18%;
+}
