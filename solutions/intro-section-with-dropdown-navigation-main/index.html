@@ -13,11 +13,41 @@
 <body>
   <main class="main">
     <header class="main_header">
+      <div id="bodiBak">
+        <div class="navMovil">
+          <details>
+            <summary>Features</summary>
+            <ul>
+              <li><img src="images/icon-todo.svg" alt="iconTodoList">Todo List</li>
+              <li><img src="images/icon-calendar.svg" alt="">Calendar</li>
+              <li><img src="images/icon-reminders.svg" alt="">Reminders</li>
+              <li><img src="images/icon-planning.svg" alt="">Planning</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Company</summary>
+            <ul>
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </details>
+          <p>Careers</p>
+          <p>About</p>
+          <button>Login</button>
+          <button class="register">Register</button>
+        </div>
+      </div>
       <nav class="main_nav">
       <img src="images/logo.svg" alt="LOGO">
-      <img src="images/icon-menu.svg" alt="menuIcon" id="menuIcon">
-      </nav>
-    </header>
+      <div class="check__menu">
+        <label for="imgmenu">
+          <img src="images/icon-menu.svg" alt="menuIcon" id="imgClose">
+        </label>
+        <input type="checkbox" name="menu" id="imgmenu">
+      </div>
+    </nav>
+  </header>
     <div class="backgroundSnap">
         
     </div>
@@ -38,15 +68,3 @@
 <script src="main.js"></script>
 </body>
 </html>
-
-<!--
-    Features
-    Company
-    Careers
-    About
-  
-    Login
-    Register
-  
-
--->
