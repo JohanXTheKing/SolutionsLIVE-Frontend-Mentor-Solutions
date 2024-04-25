@@ -18,14 +18,10 @@ body
 .main .main_header nav
 {
     display: flex;
-    padding: 1.5rem 1.2rem;
+    padding: 2rem 2.5rem;
     justify-content: space-between;
 }
-.main .main_header nav div
-{
-    z-index: 150;
-}
-.main .main_header nav div input
+.main .main_header nav .check__menu
 {
     display: none;
 }
@@ -37,6 +33,84 @@ body
     display: none;
     position: absolute;
     z-index: 100;
+}
+.navDesktop
+{
+    display: flex;;
+    width: 100%;
+    justify-content: space-between;
+}
+.navDesktop ul,
+.navDesktop .navDesktop__buttons
+{
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.navDesktop ul
+{
+    list-style: none;
+    margin-left: 4rem;
+}
+.navDesktop .navDesktop__buttons button
+{
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--MediumGray);
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s;
+}
+.navDesktop .navDesktop__buttons button:hover
+{
+    color:var(--AlmostBlack);
+}
+.navDesktop .navDesktop__buttons button:nth-child(1)
+{
+    margin-right: 10rem;
+}
+.navDesktop__buttons
+{
+    position: relative;
+}
+.navDesktop .navDesktop__buttons .register
+{
+    border: 1px solid var(--MediumGray);
+    border-radius: 1rem;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    padding: 0.8rem 1.5rem .6rem;
+    transition: .2s;
+}
+.navDesktop .navDesktop__buttons .register:hover
+{
+    border: 1px solid transparent;
+}
+.navDesktop .navDesktop__buttons .register:active
+{
+    color: var(--AlmostBlack);
+}
+.navDesktop ul li
+{
+    margin-right: 2.5rem;
+}
+.navDesktop ul li img
+{
+    margin-left: 5px;
+}
+.navDesktop ul a
+{
+    text-decoration: none;
+    color: var(--MediumGray);
+    font-size: 1rem;
+    transition: .5s;
+}
+.navDesktop ul a:hover
+{
+    font-weight: 500;
+    color: var(--AlmostBlack);
 }
 #bodiBak .navMovil
 {
@@ -106,9 +180,19 @@ body
     border-radius: 1rem;
     border: 1px solid var(--AlmostBlack);
 }
+.desktopFlex 
+{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1.5rem auto;
+    justify-content: space-between;
+    padding-left: 2rem;
+    position: relative;
+    width: 83vw;
+}
 .backgroundSnap
 {
-    width: 100%;
+    width: 40%;
 }
 .backgroundSnap img,
 .backgroundSnap source
@@ -117,22 +201,22 @@ body
     height: 100%;
     object-fit: contain;
 }
-.main_text
+.main_text .h1D
 {
-    text-align: center;
+    font-size: 5rem;
+    padding-top: 5.5rem;
 }
-.main_text h1
+.main_text .h1M,
+.main_text .pm
 {
-    font-size: 2.2rem;
-    margin-top: 2.5rem;
-    margin-bottom: .8rem;
+    display: none;
 }
-.main_text p
+.main_text .pd
 {
     color: var(--MediumGray);
     line-height: 1.5;
-    padding:  .6rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    padding: 2.2rem 0;
 }
 .main_text button
 {
@@ -146,12 +230,12 @@ body
     cursor: pointer;
     outline: none;
     margin-top: 1rem;
+    transition: .3s;
 }
-.main_text button:active
+.main_text button:hover
 {
     background-color: var(--AlmostWhite);
     color: var(--AlmostBlack);
-    transition: .3s;
     outline: 1px solid var(--AlmostBlack);
 }
 .containerMark
@@ -159,28 +243,13 @@ body
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 7rem;
+    width: 97%;
 }
 .containerMark img
 {
     width: 18%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 350px) 
 {
     #bodiBak
@@ -190,5 +259,66 @@ body
     .navMovil
     {
         font-size: .9rem;
+        display: block;
+    }
+}
+@media (max-width: 840px) 
+{
+    .main .main_header nav .check__menu
+    {
+        z-index: 150;
+        display: block;
+    }
+    .main .main_header nav .check__menu input
+    {
+        display: none;
+    }
+    .navDesktop
+    {
+        display: none;
+    }
+    .main .main_header nav
+    {
+        padding: 1.5rem 1.2rem;
+    }
+    .desktopFlex 
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    .backgroundSnap
+    {
+        width: 100%;
+    }
+    .main_text
+    {
+        text-align: center;
+    }
+    .main_text .h1M
+    {
+        font-size: 2.2rem;
+        display: block;
+        margin-top: 2.5rem;
+        margin-bottom: .8rem;
+    }
+    .main_text .h1D,
+    .main_text .pd
+    {
+        display: none;
+    }
+    .main_text .pm
+    {
+        display: block;
+        padding: 0 1rem;
+        color: var(--MediumGray);
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+    .containerMark
+    {
+        width: 100%;
     }
 }
