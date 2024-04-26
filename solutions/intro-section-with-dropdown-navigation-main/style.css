@@ -92,26 +92,75 @@ body
 {
     color: var(--AlmostBlack);
 }
-.navDesktop ul li
+.navDesktop ul a
 {
-    margin-right: 2.5rem;
+    text-decoration: none;
 }
 .navDesktop ul li img
 {
     margin-left: 5px;
 }
-.navDesktop ul a
+.navDesktop ul li
 {
-    text-decoration: none;
-    color: var(--MediumGray);
-    font-size: 1rem;
-    transition: .5s;
+    margin-right: 2.5rem;
+    cursor: pointer;
 }
-.navDesktop ul a:hover
+.navDesktop ul li:hover,
+.slash1 a:hover,
+.slash2 a:hover
 {
     font-weight: 500;
     color: var(--AlmostBlack);
 }
+.navDesktop ul a,
+.navDesktop ul li
+{
+    color: var(--MediumGray);
+    font-size: 1rem;
+    transition: .5s;
+}
+.navDesktop ul label input[type="checkbox"]
+{
+    position: absolute;
+    opacity: 0;
+}
+.navDesktop ul label input[type="checkbox"]:checked + .slash1,
+.navDesktop ul label input[type="checkbox"]:checked + .slash2
+{
+    display: block;
+    color: var(--MediumGray);
+    position: absolute;
+}
+.slash1 a img
+{
+    margin-right: .8rem;
+}
+.slash1,
+.slash2
+{
+    padding: 1rem 1.3rem;
+    line-height: 2;
+    border-radius: .5rem;
+    background: hsl(0, 0%, 98%);
+    top: 8%;
+    box-shadow: 0px 0px 150px -45px rgba(105,105,105,1);
+    z-index: 10;
+    display: none;
+    transition: .5s;
+}
+.slash1
+{
+    left: 7.8%;
+}
+.slash2
+{
+    left: 22%;
+    z-index: 5;
+    box-shadow: 20px 0px 140px -30px rgba(105,105,105,1);
+}
+
+
+
 #bodiBak .navMovil
 {
     background-color: white;
@@ -184,7 +233,7 @@ body
 {
     display: flex;
     flex-direction: row-reverse;
-    margin: 1.5rem auto;
+    margin: 3.5rem auto;
     justify-content: space-between;
     padding-left: 2rem;
     position: relative;
@@ -203,7 +252,7 @@ body
 }
 .main_text .h1D
 {
-    font-size: 5rem;
+    font-size: 5.2rem;
     padding-top: 5.5rem;
 }
 .main_text .h1M,
