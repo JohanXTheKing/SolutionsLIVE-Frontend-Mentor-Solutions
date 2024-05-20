@@ -52,7 +52,7 @@
 
 - |||
   | :----- | :----- |
-  | Solution URL: | [Intro-section-with-dropdown-navigation-main](https://www.frontendmentor.io/solutions/interactive-rating-component-solution-with-flex-and-grid-vMj3C1LMTz](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5/hub)) |
+  | Solution URL: | [Intro-section-with-dropdown-navigation-main](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5/hub)
   | Live Site URL: | [https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/intro-section-with-dropdown-navigation-main/](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/intro-section-with-dropdown-navigation-main/) |
   |||
 
