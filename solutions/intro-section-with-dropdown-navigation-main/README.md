@@ -8,7 +8,7 @@
     <a href="https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5/hub" target="_blank"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/interactive-rating-component-main/">Ver demo</a>
+    <a href="https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/intro-section-with-dropdown-navigation-main/">Ver demo</a>
     &nbsp;·&nbsp;
     <a href="https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/issues" target="_blank">Report bug</a>
     &nbsp;·&nbsp;
@@ -52,7 +52,7 @@
 
 - |||
   | :----- | :----- |
-  | Solution URL: | [Interactive Rating Component Main](https://www.frontendmentor.io/solutions/interactive-rating-component-solution-with-flex-and-grid-vMj3C1LMTz) |
+  | Solution URL: | [Intro-section-with-dropdown-navigation-main](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5/hub)
   | Live Site URL: | [https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/intro-section-with-dropdown-navigation-main/](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/intro-section-with-dropdown-navigation-main/) |
   |||
 
