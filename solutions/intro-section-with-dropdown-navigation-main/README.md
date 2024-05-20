@@ -8,7 +8,7 @@
     <a href="https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5/hub" target="_blank"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/interactive-rating-component-main/">Ver demo</a>
+    <a href="https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/intro-section-with-dropdown-navigation-main/">Ver demo</a>
     &nbsp;·&nbsp;
     <a href="https://github.com/JohanXTheKing/SolutionsLIVE-Frontend-Mentor-Solutions/issues" target="_blank">Report bug</a>
     &nbsp;·&nbsp;
