@@ -40,14 +40,14 @@ body
     width: 100%;
     justify-content: space-between;
 }
-.navDesktop ul,
+.navDesktop .ul,
 .navDesktop .navDesktop__buttons
 {
     display: flex;
     font-size: 1rem;
     font-weight: 500;
 }
-.navDesktop ul
+.navDesktop .ul
 {
     list-style: none;
     margin-left: 4rem;
@@ -92,40 +92,40 @@ body
 {
     color: var(--AlmostBlack);
 }
-.navDesktop ul a
+.navDesktop .ul a
 {
     text-decoration: none;
 }
-.navDesktop ul li img
+.navDesktop .ul li img
 {
     margin-left: 5px;
 }
-.navDesktop ul li
+.navDesktop .ul li
 {
     margin-right: 2.5rem;
     cursor: pointer;
 }
-.navDesktop ul li:hover,
+.navDesktop .ul li:hover,
 .slash1 a:hover,
 .slash2 a:hover
 {
     font-weight: 500;
     color: var(--AlmostBlack);
 }
-.navDesktop ul a,
-.navDesktop ul li
+.navDesktop .ul a,
+.navDesktop .ul li
 {
     color: var(--MediumGray);
     font-size: 1rem;
     transition: .5s;
 }
-.navDesktop ul label input[type="checkbox"]
+.navDesktop .ul label input[type="checkbox"]
 {
     position: absolute;
     opacity: 0;
 }
-.navDesktop ul label input[type="checkbox"]:checked + .slash1,
-.navDesktop ul label input[type="checkbox"]:checked + .slash2
+.navDesktop .ul label input[type="checkbox"]:checked + .slash1,
+.navDesktop .ul label input[type="checkbox"]:checked + .slash2
 {
     display: block;
     color: var(--MediumGray);
