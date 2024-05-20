@@ -96,16 +96,16 @@ body
 {
     text-decoration: none;
 }
-.navDesktop .ul li img
+.navDesktop .ul p img
 {
     margin-left: 5px;
 }
-.navDesktop .ul li
+.navDesktop .ul p
 {
     margin-right: 2.5rem;
     cursor: pointer;
 }
-.navDesktop .ul li:hover,
+.navDesktop .ul p:hover,
 .slash1 a:hover,
 .slash2 a:hover
 {
@@ -113,7 +113,7 @@ body
     color: var(--AlmostBlack);
 }
 .navDesktop .ul a,
-.navDesktop .ul li
+.navDesktop .ul p
 {
     color: var(--MediumGray);
     font-size: 1rem;
