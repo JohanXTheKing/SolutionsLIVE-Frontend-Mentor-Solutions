@@ -1,0 +1,140 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+:root
+{
+    --Gradient:    hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --PaleBlue:    hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue:    hsl(228, 56%, 26%);
+    --VeryDarkBlue:hsl(229, 57%, 11%);
+
+}
+body
+{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    align-items: center;
+    font-size: 14px;
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main
+{
+    width: 85vw;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+}
+.main .fylo
+{
+    margin-bottom: 1rem;
+    border-start-end-radius: 45%;
+}
+.fyles_flex
+{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    margin-top: 14%;
+    align-items: stretch;
+}
+.main .date_fylo,
+.fylo
+{
+    background-color: var(--DarkBlue);
+    padding: 14%;
+    border-radius: 5%;
+}
+.fyles_flex .fyles 
+{
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem;
+    background-color: var(--VeryDarkBlue);
+    border-radius: 15%;
+}
+.main .date_fylo p
+{  
+    text-align: center;
+    font-size: .8rem;
+}
+.main .date_fylo
+{
+    position: relative;
+}
+.main .date_fylo .barra
+{
+    width: 100%;
+    height: 1.2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--VeryDarkBlue);
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+}
+.main .date_fylo .barra::before
+{
+    content: "0 GB";
+    position: absolute;
+    top: 60%;
+    font-weight: bold;
+}
+.main .date_fylo .barra::after
+{
+    content: "1000 GB";
+    position: absolute;
+    top: 60%;
+    right: 14%;
+    font-weight: bold;
+}
+.main .date_fylo .barra .barra_fylo
+{
+    width: 75%;
+    height: 75%;
+    margin-left: .2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: linear-gradient(to right ,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+.main .date_fylo .barra .barra_fylo .circle_barra_fylo
+{
+    width: 7%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+.space
+{
+    width: 45%;
+    position: absolute;
+    top: 80%;
+    left: 28%;
+    text-align: center;
+    color: var(--VeryDarkBlue);
+    font-weight: bold;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    border-radius: .6rem;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.space span
+{
+    font-size: .8rem;
+    color: var(--GrayishBlue);
+    margin-left: .6rem;
+}
