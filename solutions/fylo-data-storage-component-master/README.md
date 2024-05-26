@@ -52,7 +52,7 @@
 
   -||
   | :----- | :----- |
-  | Solution URL: | [------>](https://www.frontendmentor.io/solutions/challenge-complete-with-flexbox-DVgKzC-7ma)
+  | Solution URL: | [------>](https://www.frontendmentor.io/solutions/solution-for-fylodatastoragecomponentmaster-with-flexbox-7jKXlH0WA_)
   | Live Site URL: | [------>](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/fylo-data-storage-component-master/) |
   |||
 
