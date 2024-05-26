@@ -14,11 +14,9 @@ body
 }
 .main .fylo {
     width: 30%;
-    height: 14rem;
+    height: 13rem;
     padding: 3rem;
     margin-left: 7rem;
-    position: relative;
-    top: -1rem;
 }
 .fyles_flex
 {
@@ -61,9 +59,9 @@ body
 }
 .space
 {
-    width: 30%;
+    width: 31%;
     position: absolute;
-    top: -30%;
+    top: -31%;
     right: -25%;
     text-align: center;
     color: var(--VeryDarkBlue);
