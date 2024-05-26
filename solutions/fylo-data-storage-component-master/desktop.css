@@ -1,0 +1,89 @@
+body
+{
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-color: var(--VeryDarkBlue);
+    background-size: contain;
+    background-position: bottom;
+}
+.main
+{
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-between;
+}
+.main .fylo {
+    width: 30%;
+    height: 14rem;
+    padding: 3rem;
+    margin-left: 7rem;
+    position: relative;
+    top: -3rem;
+}
+.fyles_flex
+{
+    justify-content: start;
+}
+.fyles_flex .fyles 
+{
+    height: 38%;
+    margin-right: 10%;
+    width:  26%;
+}
+.main .date_fylo {
+    height: 10rem;
+    width: 48%;
+    background-color: var(--DarkBlue);
+    padding: 4%;
+    border-radius: 5%;
+    position: relative;
+    top: 1rem;
+    left: -7rem;
+}
+.main .date_fylo p
+{
+    text-align: start;
+    letter-spacing: 1px;
+}
+.main .date_fylo .barra .barra_fylo .circle_barra_fylo
+{
+    width: 4%;
+    margin-right: .2rem;
+}
+.main .date_fylo .barra::before,
+.main .date_fylo .barra::after
+{
+    top: 65%;
+}
+.main .date_fylo .barra::after
+{
+    right: 9%;
+}
+.space
+{
+    width: 30%;
+    position: absolute;
+    top: -30%;
+    right: -25%;
+    text-align: center;
+    color: var(--VeryDarkBlue);
+    font-weight: bold;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    border-radius: .6rem;
+    background-color: #fff;
+}
+.space::before
+{
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    right: 0;
+    border-right: 2rem solid #fff;
+    border-bottom: 2rem solid transparent;
+    width:  1.6rem;
+    height: .1rem;
+}
