@@ -167,6 +167,10 @@ body
     margin-bottom: 6%;
     font-weight: 400;
 }
+.footer .enlash a:active
+{
+    color: var(--StrongCyan);
+}
 .iconSlash
 {
     display: flex;
@@ -180,9 +184,36 @@ body
     height: 15%;
     margin: 0 10%;
 }
-
+.features__1
+{
+    height: 100vh;
+}
 .iconSlash a img
 {
     width: 100%;
     height: 100%;
+}
+@media (max-width: 350px) 
+{
+    header
+    {
+        height: 100vh;
+    }
+    .features__1
+    {
+        margin-top: 80%;
+    }
+    .features__2
+    {
+        margin-top: 160%;
+    }
+    .grid__item_corp
+    {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .grid__item_corp img
+    {
+        width: 80%;
+    }
 }
