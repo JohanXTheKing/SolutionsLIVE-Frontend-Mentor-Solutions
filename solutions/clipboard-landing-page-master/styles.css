@@ -31,9 +31,14 @@ body
 }
 .header__background
 {
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+}
+.header__background img
+{
+    width: 100%;
 }
 .header .logo_clipboard
 {

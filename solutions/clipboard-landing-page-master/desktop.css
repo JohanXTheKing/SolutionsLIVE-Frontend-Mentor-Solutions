@@ -1,0 +1,155 @@
+.header__title
+{
+    font-size: 3.4rem;
+}
+.header__text,
+.features__text
+{
+    font-size: 1.6rem;
+    padding: 0 40rem ;
+}
+.header .buttons,
+.features__3 .buttons
+{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin: 2.5% 0 0;
+}
+.header button, .features__3 button {
+    width: 14%;
+    font-size: 1.2rem;
+    margin: 0 .8rem;
+}
+.header
+{
+    width: 100vw;
+}
+.header picture img
+{
+    width: 100%;
+}
+.header picture source
+{
+    width: 80vw;
+    background-color: aqua;
+}
+.features__1
+{
+    margin-top: -10%;
+}
+.flex
+{
+    display: flex;
+}
+.flex .flex_img,
+.flex .flex_text
+{
+    width: 50%;
+}
+.flex .flex_img img
+{
+    width: 100%;
+}
+.flex_text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+}
+.flex_text .features__sub_title,
+.flex_text p
+{
+    padding: 0;
+    text-align: start;
+}
+.flex_text p
+{
+    width: 65%;
+}
+.features__text
+{
+    padding: 0 25%;
+}
+.features__2
+{
+    margin-top: 4%;
+}
+.features__2 img
+{
+    width: 65%;
+}
+.grid__items .features__text
+{
+    padding: 0 5%;
+    font-size: 1.5rem;
+}
+.grid
+{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+}
+.grid__items
+{
+    width: 33.3%;
+    text-align: center;
+}
+.grid__item_corp
+{
+    width: 88%;
+    margin: 5% auto 0;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer
+{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.footer .logo 
+{
+    flex: 1;
+}
+.footer .enlash
+{
+    flex: 2;
+    padding: 2.5rem 0;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    justify-content: start;
+}
+.footer .enlash a
+{
+    width: 30%;
+    margin: 1% 0;
+}
+.footer div
+{
+    margin: 0;
+}
+.footer .iconSlash
+{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer .iconSlash img
+{
+    width: 35%;
+    margin: 0;
+}
+.footer .iconSlash a
+{
+    font-size: 2rem;
+    margin: -1rem;
+}
