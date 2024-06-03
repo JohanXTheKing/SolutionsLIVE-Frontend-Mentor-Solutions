@@ -1,0 +1,146 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+:root
+{
+    --SoftRed:        hsl(10, 79%, 65%);
+    --Cyan:           hsl(186, 34%, 60%);
+    --DarkBrown:      hsl(25, 47%, 15%);
+    --MediumBrown:    hsl(28, 10%, 53%);
+    --Cream:          hsl(27, 66%, 92%);
+    --VeryPaleOrange: hsl(33, 100%, 98%);
+}
+
+body
+{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+    min-height: 100vh;
+}
+.main
+{
+    width: 90vw;
+    font-family: "DM Sans", sans-serif;
+}
+.header_main
+{
+    padding: 1.5rem 1.5rem 1.2rem;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    border-radius: .6rem;
+    background-color: var(--SoftRed);
+}
+.header_main_text
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.header_main_text span:nth-child(1)
+{
+    font-size: 1rem;
+}
+.header_main_text span:nth-child(2)
+{
+    font-size: 1.6rem;
+    padding-top: .5rem;
+    font-weight: 700;
+}
+.header_main_logo
+{
+    display: flex;
+    align-items: center;
+}
+.calender_main
+{
+    background-color: #fff;
+    margin-top: 1rem;
+    padding: 1.4rem;
+}
+.calender_main h1
+{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--DarkBrown);
+}
+.calender_main .calender_main_chart
+{
+    display: flex;
+    padding: 18% 0 15%; 
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+}
+.porcentual
+{
+    border-radius: .2rem;
+    display: flex;
+    width: 2rem;
+    align-items: end;
+    background: var(--SoftRed);
+}
+.porcentual p
+{
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    font-weight: 400;
+    font-size: .8rem;
+    height: 1rem;
+    bottom: -2rem;
+    color: var(--MediumBrown);
+    width: 100%;
+}
+.porcentual:nth-child(3)
+{
+    background-color: var(--Cyan);
+}
+.resumen_main
+{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    padding-top: 10%;
+    position: relative;
+}
+.resumen_main::after
+{
+    content: "";
+    background-color: var(--Cream);
+    width: 100%;
+    top: 0;
+    height: 4%;
+    border-radius: 1rem;
+    position: absolute;
+}
+.resumen_main p
+{
+    color: var(--MediumBrown);
+    font-weight: 500;
+    font-size: .9rem;
+}
+.resumen_main p span
+{
+    color: var(--DarkBrown);
+    font-weight: 700;
+    display: block;
+}
+.resumen_main  p:nth-child(1) span
+{
+    font-size: 1.8rem;
+    margin-top: .5rem;
+}
+.resumen_main  p:nth-child(2) span
+{
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+.resumen_main  p:nth-child(2)
+{
+    text-align: end;
+    width: 40%;
+}
+
