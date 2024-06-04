@@ -1,0 +1,19 @@
+.calender_main,
+.header_main
+{
+    padding: 2rem;
+}
+.calender_main h1,
+.header_main_text span:nth-child(2),
+.resumen_main  p:nth-child(1) span
+{
+    font-size: 2rem;
+}
+.porcentual
+{
+    width: 11%;
+}
+.calender_main .calender_main_chart
+{
+    padding: 10% 0 5%;
+}
