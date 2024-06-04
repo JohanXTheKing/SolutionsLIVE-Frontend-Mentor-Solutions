@@ -1,0 +1,37 @@
+.main
+{
+    max-width:450px;
+}
+.calender_main
+{
+    padding: 2rem;
+}
+.calender_main h1
+{
+    font-size: 1.7rem;
+}
+.porcentual
+{
+    width: 2.8rem;
+}
+.calender_main .calender_main_chart
+{
+    padding: 15% 0 8%;
+}
+.porcentual p
+{
+    bottom: -1.5rem;
+}
+.resumen_main p:nth-child(1) span
+{
+    font-size: 2.7rem;
+    margin-top: -.2rem;
+}
+.resumen_main p
+{
+    font-size: 1rem;
+}
+.resumen_main
+{
+    padding-top: 6%;
+}
