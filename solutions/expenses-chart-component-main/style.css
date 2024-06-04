@@ -30,7 +30,7 @@ body
     display: flex;
     color: #fff;
     justify-content: space-between;
-    border-radius: .6rem;
+    border-radius: 1rem;
     background-color: var(--SoftRed);
 }
 .header_main_text
@@ -59,7 +59,7 @@ body
     background-color: #fff;
     margin-top: 1rem;
     padding: 1.4rem;
-    border-radius: .6rem;
+    border-radius: 1rem;
 }
 .calender_main h1
 {
@@ -80,8 +80,69 @@ body
     border-radius: .2rem;
     display: flex;
     width: 2rem;
+    position: relative;
     align-items: end;
+    cursor: pointer;
     background: var(--SoftRed);
+    transition: all .5s;
+}
+.porcentual:hover
+{
+    background: #ff9b87;
+}
+.porcentual:nth-child(3):hover
+{
+    background-color: #b4dfe5;
+}
+.porcentual:active::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    width: 140%;
+    left: calc(-20% - .3rem);
+    font-size: .8rem;
+    padding: .3rem;
+    border-radius: .2rem;
+    background-color: var(--DarkBrown);
+}
+.porcentual:nth-child(1):active::before
+{
+    content: "$15.38";
+    top: -65%;
+}
+.porcentual:nth-child(2):active::before
+{
+    content: "$36.71";
+    top: -32%;
+}
+.porcentual:nth-child(3):active::before
+{
+    content: "$52.36";
+    top: -22%;
+}
+.porcentual:nth-child(4):active::before
+{
+    content: "$31.07";
+    top: -40%;
+}
+.porcentual:nth-child(5):active::before
+{
+    content: "$22.53";
+    top: -52%;
+}
+.porcentual:nth-child(6):active::before
+{
+    content: "$47.28";
+    top: -28%;
+}
+.porcentual:nth-child(7):active::before
+{
+    content: "$28.56";
+    top: -50%;
 }
 .porcentual p
 {

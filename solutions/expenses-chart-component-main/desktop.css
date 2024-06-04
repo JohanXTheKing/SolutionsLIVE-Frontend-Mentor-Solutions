@@ -1,6 +1,6 @@
 .main
 {
-    max-width:450px;
+    max-width: 500px;
 }
 .calender_main
 {
@@ -13,6 +13,11 @@
 .porcentual
 {
     width: 2.8rem;
+}
+.porcentual:active::before
+{
+    width: 110%;
+    left: calc(-5% - .3rem);
 }
 .calender_main .calender_main_chart
 {

@@ -52,7 +52,7 @@
 
   |||
   | :----- | :----- |
-  | Solution URL: | [------>](https://www.frontendmentor.io/solutions/challenge-complete-with-flexbox-DVgKzC-7ma)
+  | Solution URL: | [------>](https://www.frontendmentor.io/solutions/challenge-complete-of-expenses-chart-component-main-3bNiB98doA) |
   | Live Site URL: | [------>](https://johanxtheking.github.io/SolutionsLIVE-Frontend-Mentor-Solutions/solutions/expenses-chart-component-main/) |
   |||
 

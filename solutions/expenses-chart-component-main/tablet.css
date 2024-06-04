@@ -13,6 +13,11 @@
 {
     width: 11%;
 }
+.porcentual:active::before
+{
+    width: 80%;
+    left: 0;
+}
 .calender_main .calender_main_chart
 {
     padding: 10% 0 5%;
