@@ -2,51 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Calculator App</title>
 </head>
-<body>
-  <main class="main">
-    <div class="changesTheme">
-      <p class="logo">
+<body id="bodyy">
+  <div class="calculator">
+    <div class="calculator__header">
+      <p class="calculator__logo" id="logo">
         calc
       </p>
-      <div class="themes">
-        <p>THEME</p>
-        <div class="changesThemes" id="changesThemes">
-          <div class="circleChanges" id="circleChanges"></div>
+      <div class="calculator__switch">
+        <p class="theme" id="theme">THEME</p>
+
+
+
+        <div class="calculator__switch--barra" id="calculator__barra">
+          <p class="numbers" id="numbers">123</p>
+          <button class="calculator__switch-button" id="switch-button"></button>
         </div>
       </div>
     </div>
-    <div class="resultado_calculator" id="resultado_calculator">
+
+    <div class="res" id="res">
       399,981
     </div>
-    <div class="calculator" id="calculator">
-      <button id="seven">7</button>
-      <button id="eight">8</button>
-      <button id="nine">9</button>
-      <button id="delet">DEL</button>
-      <button id="four">4</button>
-      <button id="five">5</button>
-      <button id="six">6</button>
-      <button id="plus">+</button>
-      <button id="one">1</button>
-      <button id="two">2</button>
-      <button id="three">3</button>
-      <button id="menos">-</button>
-      <button id="punto">.</button>
-      <button id="zero">0</button>
-      <button id="multi">/</button>
-      <button id="equis">x</button>
-      <button id="btn__reset">RESET</button>
-      <button id="btn__result">=</button>
+
+    <div class="table" id="table">
+      <div class="buttonBox">
+        <button class="btn7 button">7</button>
+        <button class="btn8 button">8</button>
+        <button class="btn9 button">9</button>
+        <button class="btnD button del_button" id="del">del</button>
+        <button class="btn4 button">4</button>
+        <button class="btn5 button">5</button>
+        <button class="btn6 button">6</button>
+        <button class="btn+ button">+</button>
+        <button class="btn1 button">1</button>
+        <button class="btn2 button">2</button>
+        <button class="btn3 button">3</button>
+        <button class="btn- button">-</button>
+        <button class="btn. button">.</button>
+        <button class="btn0 button">0</button>
+        <button class="btn/ button">/</button>
+        <button class="btnx button">x</button>
+      </div>
+      <div class="buttonSub">
+        <button class="btnr button reset" id="reset">reset</button>
+        <button class="btnC button brest" id="equal">=</button>
+      </div>
     </div>
-  </main>
   <script src="main.js"></script>
 </body>
 </html>

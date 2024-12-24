@@ -1,213 +1,113 @@
-const changesThemes = document.querySelector('#changesThemes');
-const circleChanges = document.querySelector('#circleChanges');
-const calculator = document.querySelector('#calculator')
-const buttons = calculator.querySelectorAll('button')
-const resultado_calculator = document.querySelector('#resultado_calculator');
-const btn__reset = document.querySelector('#btn__reset');
-const btn__delete = document.querySelector('#delet');
-const btn__plus = document.querySelector('#btn__result');
-const seven = document.querySelector('#seven')
-const eight = document.querySelector('#eight')
-const nine = document.querySelector('#nine')
-const four = document.querySelector('#four')
-const five = document.querySelector('#five')
-const six = document.querySelector('#six')
-const one = document.querySelector('#one')
-const two = document.querySelector('#two')
-const three = document.querySelector('#three')
-const zero = document.querySelector('#zero')
-const plus = document.querySelector('#plus')
-const menos = document.querySelector('#menos')
-const punto = document.querySelector('#punto')
-const multi = document.querySelector('#multi')
-const equis = document.querySelector('#equis')
-const body = document.body
-let translateValue = 0;
-const handleThemeChange = () => {
-  if (translateValue === 0) {
-    circleChanges.style.transform = 'translateX(150%)';
-    circleChanges.style.background = 'var(--Orange)'
-    changesThemes.style.background = 'var(--GrayishRed)';
-    resultado_calculator.style.background = 'var(--VeryLightGray)'
-    calculator.style.background = 'var(--GrayishRed)'
-    btn__reset.style.background = 'var(--ModerateCyan)'
-    btn__plus.style.background = 'var(--Orange)'
-    btn__plus.style.boxShadow = '0 .3rem 0 var(--DarkRed)'
-    btn__plus.style.color = 'white';
-    seven.style.background = 'var(--LightGrayishYellow)';
-    seven.style.color = 'var(--VeryDarkGrayishYellow)';
-    seven.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    eight.style.background = 'var(--LightGrayishYellow)';
-    eight.style.color = 'var(--VeryDarkGrayishYellow)';
-    eight.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    nine.style.background = 'var(--LightGrayishYellow)';
-    nine.style.color = 'var(--VeryDarkGrayishYellow)';
-    nine.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    four.style.background = 'var(--LightGrayishYellow)';
-    four.style.color = 'var(--VeryDarkGrayishYellow)';
-    four.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    five.style.background = 'var(--LightGrayishYellow)';
-    five.style.color = 'var(--VeryDarkGrayishYellow)';
-    five.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    six.style.background = 'var(--LightGrayishYellow)';
-    six.style.color = 'var(--VeryDarkGrayishYellow)';
-    six.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    one.style.background = 'var(--LightGrayishYellow)';
-    one.style.color = 'var(--VeryDarkGrayishYellow)';
-    one.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    two.style.background = 'var(--LightGrayishYellow)';
-    two.style.color = 'var(--VeryDarkGrayishYellow)';
-    two.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    three.style.background = 'var(--LightGrayishYellow)';
-    three.style.color = 'var(--VeryDarkGrayishYellow)';
-    three.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    zero.style.background = 'var(--LightGrayishYellow)';
-    zero.style.color = 'var(--VeryDarkGrayishYellow)';
-    zero.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    plus.style.background = 'var(--LightGrayishYellow)';
-    plus.style.color = 'var(--VeryDarkGrayishYellow)';
-    plus.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    menos.style.background = 'var(--LightGrayishYellow)';
-    menos.style.color = 'var(--VeryDarkGrayishYellow)';
-    menos.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    punto.style.background = 'var(--LightGrayishYellow)';
-    punto.style.color = 'var(--VeryDarkGrayishYellow)';
-    punto.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    multi.style.background = 'var(--LightGrayishYellow)';
-    multi.style.color = 'var(--VeryDarkGrayishYellow)';
-    multi.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    equis.style.background = 'var(--LightGrayishYellow)';
-    equis.style.color = 'var(--VeryDarkGrayishYellow)';
-    equis.style.boxShadow = '0 .3rem 0 var(--DarkGrayish9range)';
-    btn__delete.style.background = 'var(--ModerateCyan)'
-    btn__reset.style.boxShadow = ' 0 .3rem 0 var(--DarkVeryDarkCyan)'
-    btn__delete.style.boxShadow = ' 0 .3rem 0 var(--DarkVeryDarkCyan)'
-    body.style.color = 'var(--VeryDarkGrayishYellow)'
-    body.style.background = 'var(--LightGray)'
-    translateValue = 1.2;
-  } else if (translateValue === 1.2) {
-    circleChanges.style.transform = 'translateX(290%)';
-    circleChanges.style.background = 'var(--PureCyan)'
-    btn__plus.style.background = 'var(--PureCyan)'
-    btn__plus.style.boxShadow = '0 .3rem 0 var(--SoftCyan)'
-    btn__plus.style.color = 'black';
-    seven.style.background = 'var(--VeryDarkViolet)';
-    seven.style.color = 'var(--LightYellow)';
-    seven.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    eight.style.background = 'var(--VeryDarkViolet)';
-    eight.style.color = 'var(--LightYellow)';
-    eight.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    nine.style.background = 'var(--VeryDarkViolet)';
-    nine.style.color = 'var(--LightYellow)';
-    nine.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    four.style.background = 'var(--VeryDarkViolet)';
-    four.style.color = 'var(--LightYellow)';
-    four.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    five.style.background = 'var(--VeryDarkViolet)';
-    five.style.color = 'var(--LightYellow)';
-    five.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    six.style.background = 'var(--VeryDarkViolet)';
-    six.style.color = 'var(--LightYellow)';
-    six.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    one.style.background = 'var(--VeryDarkViolet)';
-    one.style.color = 'var(--LightYellow)';
-    one.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    two.style.background = 'var(--VeryDarkViolet)';
-    two.style.color = 'var(--LightYellow)';
-    two.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    three.style.background = 'var(--VeryDarkViolet)';
-    three.style.color = 'var(--LightYellow)';
-    three.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    zero.style.background = 'var(--VeryDarkViolet)';
-    zero.style.color = 'var(--LightYellow)';
-    zero.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    plus.style.background = 'var(--VeryDarkViolet)';
-    plus.style.color = 'var(--LightYellow)';
-    plus.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    menos.style.background = 'var(--VeryDarkViolet)';
-    menos.style.color = 'var(--LightYellow)';
-    menos.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    punto.style.background = 'var(--VeryDarkViolet)';
-    punto.style.color = 'var(--LightYellow)';
-    punto.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    multi.style.background = 'var(--VeryDarkViolet)';
-    multi.style.color = 'var(--LightYellow)';
-    multi.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    equis.style.background = 'var(--VeryDarkViolet)';
-    equis.style.color = 'var(--LightYellow)';
-    equis.style.boxShadow = '0 .3rem 0 var(--DarkViolet)';
-    changesThemes.style.background = 'var(--VeryDarkVioletKey)';
-    resultado_calculator.style.background = 'var(--VeryDarkVioletKey)'
-    calculator.style.background = 'var(--VeryDarkVioletKey)'
-    body.style.color = 'var(--LightYellow)'
-    btn__reset.style.background = 'var(--DarkViolet)'
-    btn__delete.style.background = 'var(--DarkMagenta)'
-    btn__reset.style.boxShadow = ' 0 .3rem 0 var(--VividMagenta)'
-    btn__delete.style.boxShadow = ' 0 .3rem 0 var(--VividMagenta)'
-    body.style.background = 'var(--VeryDarkVioletBack)'
-    translateValue = 2.4;
-  } else {
-    circleChanges.style.transform = 'translateX(0)';
-    circleChanges.style.background = 'var(--Red)'
-    changesThemes.style.background = 'var(--VeryDarkDesaturatedBlueKeys)';
-    resultado_calculator.style.background = 'var(--VeryDarkDesaturatedBlueRes)'
-    calculator.style.background = 'var(--VeryDarkDesaturatedBlueKeys)'
-    body.style.background = 'var(--VeryDarkDesaturatedBlueBack)'
-    body.style.color = 'var(--White)'
-    btn__reset.style.background = 'var(--DesaturatedDarkBluekeys)'
-    btn__delete.style.background = 'var(--DesaturatedDarkBluekeys)'
-    btn__reset.style.boxShadow = ' 0 .3rem 0 var(--DesaturatedDarkBlueSkeys)'
-    btn__delete.style.boxShadow = ' 0 .3rem 0 var(--DesaturatedDarkBlueSkeys)'
-    btn__plus.style.background = 'var(--Orange)'
-    btn__plus.style.boxShadow = '0 .3rem 0 var(--DarkRed)'
-    btn__plus.style.color = 'white';
-    seven.style.background = 'var(--LightGrayishOrange)';
-    seven.style.color = 'var(--VeryDarkGrayishYellow)';
-    seven.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    eight.style.background = 'var(--LightGrayishOrange)';
-    eight.style.color = 'var(--VeryDarkGrayishYellow)';
-    eight.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    nine.style.background = 'var(--LightGrayishOrange)';
-    nine.style.color = 'var(--VeryDarkGrayishYellow)';
-    nine.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    four.style.background = 'var(--LightGrayishOrange)';
-    four.style.color = 'var(--VeryDarkGrayishYellow)';
-    four.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    five.style.background = 'var(--LightGrayishOrange)';
-    five.style.color = 'var(--VeryDarkGrayishYellow)';
-    five.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    six.style.background = 'var(--LightGrayishOrange)';
-    six.style.color = 'var(--VeryDarkGrayishYellow)';
-    six.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    one.style.background = 'var(--LightGrayishOrange)';
-    one.style.color = 'var(--VeryDarkGrayishYellow)';
-    one.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    two.style.background = 'var(--LightGrayishOrange)';
-    two.style.color = 'var(--VeryDarkGrayishYellow)';
-    two.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    three.style.background = 'var(--LightGrayishOrange)';
-    three.style.color = 'var(--VeryDarkGrayishYellow)';
-    three.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    zero.style.background = 'var(--LightGrayishOrange)';
-    zero.style.color = 'var(--VeryDarkGrayishYellow)';
-    zero.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    plus.style.background = 'var(--LightGrayishOrange)';
-    plus.style.color = 'var(--VeryDarkGrayishYellow)';
-    plus.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    menos.style.background = 'var(--LightGrayishOrange)';
-    menos.style.color = 'var(--VeryDarkGrayishYellow)';
-    menos.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    punto.style.background = 'var(--LightGrayishOrange)';
-    punto.style.color = 'var(--VeryDarkGrayishYellow)';
-    punto.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    multi.style.background = 'var(--LightGrayishOrange)';
-    multi.style.color = 'var(--VeryDarkGrayishYellow)';
-    multi.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    equis.style.background = 'var(--LightGrayishOrange)';
-    equis.style.color = 'var(--VeryDarkGrayishYellow)';
-    equis.style.boxShadow = '0 .3rem 0 var(--GrayishOrange)';
-    translateValue = 0;
-  }
-};
+//elements
+const calculator__barra = document.getElementById('calculator__barra')
+const bodyy = document.getElementById('bodyy')
+const logo = document.getElementById('logo')
+const theme = document.getElementById('theme')
+const res = document.getElementById('res')
+const table = document.getElementById('table')
+const del = document.getElementById('del')
+const reset = document.getElementById('reset')
+const equal = document.getElementById('equal')
+const switcH__button = document.getElementById('switch-button')
+const botones = document.getElementsByName('#button');
+const numbers = document.getElementById('numbers')
 
-changesThemes.addEventListener('click', handleThemeChange);
+//colors
+const rootStyles = getComputedStyle(document.documentElement);
+const colores_barra_bkg = [
+    rootStyles.getPropertyValue('--grayish-red').trim(),
+    rootStyles.getPropertyValue('--very-dark-desaturate-blue').trim(),
+    rootStyles.getPropertyValue('--very-dark-violetT').trim()
+];
+const colors_bkg = [
+    rootStyles.getPropertyValue('--light-gray').trim(),
+    rootStyles.getPropertyValue('--very-dark-desaturated-blue').trim(),
+    rootStyles.getPropertyValue('--very-dark-violetM').trim()
+];
+const rest_colors = [
+    rootStyles.getPropertyValue('--very-light-gray').trim(),
+    rootStyles.getPropertyValue('--very-dark-desaturated-blue-screen').trim(),
+    rootStyles.getPropertyValue('--very-dark-violetT').trim()
+];
+const table_colors = [
+    rootStyles.getPropertyValue('--grayish-red').trim(),
+    rootStyles.getPropertyValue('--very-dark-desaturate-blue').trim(),
+    rootStyles.getPropertyValue('--very-dark-violetT').trim()
+];
+
+//keysColors
+const keysColors = [
+    rootStyles.getPropertyValue('--dark-moderate-cyan').trim(),
+    rootStyles.getPropertyValue('--desaturated-dark-blue').trim(),
+    rootStyles.getPropertyValue('--dark-violet').trim()
+]
+const equal_colors =[
+    rootStyles.getPropertyValue('--Orange').trim(),
+    rootStyles.getPropertyValue('--red').trim(),
+    rootStyles.getPropertyValue('--pure-cyan').trim()
+]
+const logo_colors =[
+    rootStyles.getPropertyValue('--very-dark-grayish-yellow').trim(),
+    rootStyles.getPropertyValue('--White').trim(),
+    rootStyles.getPropertyValue('--light-yellow').trim()
+]
+
+let indexColor = 0;
+let position = 3;
+calculator__barra.addEventListener('click', () => {
+    // Cambiar color
+    bodyy.style.backgroundColor = colors_bkg[indexColor];
+    res.style.backgroundColor = rest_colors[indexColor];
+    table.style.backgroundColor = table_colors[indexColor];
+    reset.style.backgroundColor = keysColors[indexColor]
+    indexColor = (indexColor + 1) % position;
+    
+    if(indexColor == 1)
+        {
+            switcH__button.style.display
+            calculator__barra.style.backgroundColor = colores_barra_bkg[0];
+            calculator__barra.style.justifyContent = 'center';
+            logo.style.color = logo_colors[0];
+            res.style.color = logo_colors[0]
+            theme.style.color = logo_colors[0]
+            equal.style.backgroundColor = equal_colors[0]
+            del.style.backgroundColor = keysColors[0]
+            switcH__button.style.backgroundColor = equal_colors[0];
+            del.style.boxShadow = ' 0px 4px 0 0 var(--very-dark-cyan)';
+            reset.style.boxShadow = '0px 4px 0 0 var(--very-dark-cyan)';
+            numbers.style.color = 'var(--very-dark-blue)';
+            equal.style.boxShadow = '0px 4px 0 0 var(--dark-orange)';
+            equal.style.color = 'var(--White)';
+            botones.style.color = 'var(--White)';
+        }else if(indexColor == 2)
+            {
+                res.style.color = "white"
+                calculator__barra.style.backgroundColor = colores_barra_bkg[1];
+                switcH__button.style.backgroundColor = equal_colors[1];
+                calculator__barra.style.justifyContent = 'start';
+                logo.style.color = logo_colors[1];
+                theme.style.color = logo_colors[1]
+                equal.style.backgroundColor = equal_colors[1]
+                equal.style.boxShadow = '0px 4px 0 0 var(--dark-red)';
+                equal.style.color = 'var(--White)';
+                del.style.backgroundColor = keysColors[1]
+                del.style.boxShadow = ' 0px 4px 0 0  var(--desaturated-dark-blueS)';
+                reset.style.boxShadow = '0px 4px 0 0 var(--desaturated-dark-blueS)';
+                numbers.style.color = 'var(--White)';
+    }else
+    {
+        res.style.color = logo_colors[2];
+        calculator__barra.style.backgroundColor = colores_barra_bkg[2];
+        calculator__barra.style.justifyContent = 'end';
+        equal.style.backgroundColor = equal_colors[2];
+        equal.style.boxShadow = '0px 4px 0 0 var(--soft-cyan)';
+        theme.style.color = logo_colors[2]
+        switcH__button.style.backgroundColor = equal_colors[2];
+        del.style.backgroundColor = keysColors[2]
+        logo.style.color = logo_colors[2];
+        del.style.boxShadow = ' 0px 4px 0 0 var(--vivid-magenta)';
+        reset.style.boxShadow = '0px 4px 0 0 var(--vivid-magenta)';
+        numbers.style.color = 'var(--light-yellow)';
+        equal.style.color = 'var(--very-dark-blue)';
+    }
+});
