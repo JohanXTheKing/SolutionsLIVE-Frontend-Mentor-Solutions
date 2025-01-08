@@ -269,3 +269,97 @@ calculator__barra.addEventListener('click', () => {
         btequix.style.boxShadow = '0px 4px 0 0 var(--dark-magenta)';
     }
 });
+
+let firstNumber = '';
+let secondNumber = '';
+let operation = '';
+
+function updateDisplay(value)
+{
+    res.textContent = value;
+}
+
+function handleNumber(num)
+{
+    if(operation === '')
+    {
+        firstNumber += num;
+        updateDisplay(firstNumber);
+    } else
+    {
+        secondNumber += num;
+        updateDisplay(secondNumber);
+    }
+}
+function handleOperation(op)
+{
+    if(firstNumber !== '')
+    {
+        operation = op;
+    }
+}
+function calculate()
+{
+    let result;
+    const num1 = parseFloat(firstNumber);
+    const num2 = parseFloat(secondNumber);
+
+    switch (operation)
+    {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            result = num1 / num2;
+            break;
+        default:
+            return;
+    }
+
+    updateDisplay(result);
+    firstNumber = result.toString();
+    secondNumber = '';
+    operation = '';
+}
+bt0.addEventListener('click', () => handleNumber('0'));
+bt1.addEventListener('click', () => handleNumber('1'));
+bt2.addEventListener('click', () => handleNumber('2'));
+bt3.addEventListener('click', () => handleNumber('3'));
+bt4.addEventListener('click', () => handleNumber('4'));
+bt5.addEventListener('click', () => handleNumber('5'));
+bt6.addEventListener('click', () => handleNumber('6'));
+bt7.addEventListener('click', () => handleNumber('7'));
+bt8.addEventListener('click', () => handleNumber('8'));
+bt9.addEventListener('click', () => handleNumber('9'));
+
+btplus.addEventListener('click', () => handleOperation('+'));
+btmenos.addEventListener('click', () => handleOperation('-'));
+btbarra.addEventListener('click', () => handleOperation('/'));
+btpunto.addEventListener('click', () => handleNumber('.'));
+btequix.addEventListener('click', () => handleOperation('*'));
+
+equal.addEventListener('click', calculate);
+reset.addEventListener('click', () => {
+    firstNumber = '';
+    secondNumber = '';
+    operation = '';
+    updateDisplay('0');
+});
+del.addEventListener('click', () => {
+    if(secondNumber){
+        secondNumber = secondNumber.slice(0, -1);
+        updateDisplay(secondNumber);
+    }else if (operation){
+        operation = '';
+    }else {
+        firstNumber = firstNumber.slice(0, -1);
+        updateDisplay(firstNumber);
+    }
+}
+)

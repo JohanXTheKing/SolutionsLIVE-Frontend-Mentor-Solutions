@@ -209,6 +209,7 @@ body {
 {
     padding: 1.4rem 0;
 }
+.buttonBox input,
 .button {
     background-color: var(--light-grayish-orange);
     color: var(--desaturated-dark-blueS);
